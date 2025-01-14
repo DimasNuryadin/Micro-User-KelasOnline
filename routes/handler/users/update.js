@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
   }
 
   const validate = v.validate(req.body, schema);
-  if (validate.lenght) {
+  if (validate.length) {
     return res.status(400).json({
       status: 'error',
       message: validate
